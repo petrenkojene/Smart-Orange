@@ -1,0 +1,29 @@
+@import "fonts";
+
+body {
+  font-family: TTHoves;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-align: left;
+  margin: 0px;
+  padding: 0px;
+}
+// HEADER=======================================================================================
+@import "header";
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+._container {
+  max-width: 100%;
+  margin: 0px auto;
+}
+// PROJECT_MENU=================================================================================
+
+@import "_project";
+
+// ABOUT COMPANY ===============================================================================
+
+@import "_aboutCompany";
