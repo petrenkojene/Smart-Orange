@@ -105,6 +105,11 @@
       width: 380px;
     }
   }
+  @media (max-width: 416px) {
+    .project_menu_slider_img {
+      width: 300px;
+    }
+  }
 }
 
 @media (max-width: 992px) {
