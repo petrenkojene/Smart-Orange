@@ -10,9 +10,14 @@
   .header_menu {
     padding: 10px;
   }
-  @media (max-width: 992px) {
+  @media (max-width: 1224px) {
     .menu_img {
-      margin: 29.14px 230px 29.14px 80px;
+      margin: 29.14px 180px 29.14px 80px;
+    }
+  }
+  @media (max-width: 1024px) {
+    .menu_img {
+      margin: 29.14px 100px 29.14px 50px;
     }
   }
   @media (max-width: 768px) {
@@ -20,26 +25,38 @@
       margin: 29.14px 80px 29.14px 30px;
     }
   }
+  .menu_item {
+    margin: 44.69px 60px 45.66px 0px;
+  }
+  ._last_li {
+    margin: 44.69px 0px 45.66px 0px;
+  }
 
+  @media (max-width: 1024px) {
+    .menu_item {
+      margin: 10px 60px 10px 0px;
+    }
+  }
   .menu_list {
     list-style: none;
     display: flex;
     margin: 0px;
     padding: 0px;
     flex-wrap: wrap;
-  }
-  .menu_link {
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 170%;
-    letter-spacing: 0.2em;
-    text-align: left;
-    text-decoration: none;
-    color: #333333;
-    margin: 44.69px 60px 45.66px 0px;
-    &:focus {
-      text-decoration: overline underline;
+
+    .menu_link {
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 170%;
+      letter-spacing: 0.2em;
+      text-align: left;
+      text-decoration: none;
+      color: #333333;
+
+      &:focus {
+        text-decoration: overline underline;
+      }
     }
   }
 }
