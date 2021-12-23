@@ -1,0 +1,124 @@
+@mixin greyButton {
+  color: #ffffff;
+  width: 225px;
+  height: 75px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #333333;
+}
+.ourProjects {
+  flex-basis: 1440px;
+  margin-left: 135px;
+  .ourProjects_description {
+    flex-grow: 1;
+    .ourProjects_description_description {
+      @include heading;
+    }
+    @media (max-width: 768px) {
+      .ourProjects_description_description {
+        font-size: 42px;
+        text-align: center;
+      }
+    }
+  }
+  .ourProjects_img {
+    display: flex;
+    flex-wrap: wrap;
+
+    .ourProjects_img_item1,
+    .ourProjects_img_item2 {
+      flex-basis: 570px;
+      margin: 15px 30px 15px 0px;
+    }
+    .ourProjects_img_item3 {
+      flex-basis: 270px;
+      margin: 15px 30px 15px 0px;
+    }
+    .ourProjects_img_item4 {
+      flex-basis: 470px;
+      margin: 15px 30px 15px 0px;
+    }
+    .ourProjects_img_item5 {
+      flex-basis: 370px;
+      margin: 15px 30px 15px 0px;
+    }
+    .ourProjects_img_item3,
+    .ourProjects_img_item4,
+    .ourProjects_img_item5 {
+      margin-right: 30px;
+    }
+    @media (max-width: 935px) {
+      .ourProjects_img_item1,
+      .ourProjects_img_item2,
+      .ourProjects_img_item3,
+      .ourProjects_img_item4,
+      .ourProjects_img_item5 {
+        flex-grow: 1;
+      }
+    }
+    @media (max-width: 623px) {
+      .ourProjects_img_item1,
+      .ourProjects_img_item2,
+      .ourProjects_img_item3,
+      .ourProjects_img_item4,
+      .ourProjects_img_item5 {
+        width: 270px;
+      }
+    }
+  }
+  @media (max-width: 935px) {
+    .ourProjects_img {
+      justify-content: center;
+    }
+  }
+  .ourProjects_button {
+    display: flex;
+    width: 1170px;
+    justify-content: end;
+
+    .ourProjects_description_button {
+      @include greyButton;
+    }
+  }
+  @media (max-width: 1334px) {
+    .ourProjects_button {
+      width: 840px;
+      justify-content: center;
+    }
+  }
+  @media (max-width: 768px) {
+    .ourProjects_button {
+      width: 690px;
+      justify-content: center;
+    }
+  }
+  @media (max-width: 480px) {
+    .ourProjects_button {
+      width: 320px;
+      justify-content: center;
+    }
+  }
+  @media (max-width: 320px) {
+    .ourProjects_button {
+      width: 270px;
+      justify-content: center;
+    }
+  }
+}
+@media (max-width: 1224px) {
+  .ourProjects {
+    margin-left: 80px;
+  }
+}
+@media (max-width: 1024px) {
+  .ourProjects {
+    margin-left: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .ourProjects {
+    margin-left: 30px;
+  }
+}

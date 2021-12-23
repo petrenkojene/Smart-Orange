@@ -95,15 +95,14 @@
     .about_company_description {
       grid-area: 4/1/5/2;
       margin: 15px 70px 30px 30px;
+      .heading {
+        font-size: 42px;
+      }
     }
   }
   @media (max-width: 540px) {
     .about_company_description {
       width: 300px;
-
-      .heading {
-        font-size: 42px;
-      }
     }
   }
   .about_company_description_description {
