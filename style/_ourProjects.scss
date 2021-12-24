@@ -22,6 +22,11 @@
         text-align: center;
       }
     }
+    @media (max-width: 320px) {
+      .ourProjects_description_description {
+        text-align: start;
+      }
+    }
   }
   .ourProjects_img {
     display: flex;
@@ -32,6 +37,7 @@
       flex-basis: 570px;
       margin: 15px 30px 15px 0px;
     }
+
     .ourProjects_img_item3 {
       flex-basis: 270px;
       margin: 15px 30px 15px 0px;

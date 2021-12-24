@@ -1,0 +1,187 @@
+@mixin listStyle {
+  list-style: none;
+}
+.footer {
+  background-color: #2c2c2c;
+  display: flex;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: #ffffff;
+  flex-wrap: wrap;
+  p {
+    margin: 0px;
+  }
+  .footerLogo {
+    flex-basis: 305px;
+    height: 346px;
+    margin: 57px 0px 0px 116px;
+  }
+  @media (max-width: 1390px) {
+    .footerLogo {
+      height: 240px;
+    }
+
+    @media (max-width: 1224px) {
+      .footerLogo {
+        margin: 57px 0px 0px 80px;
+      }
+    }
+    @media (max-width: 1024px) {
+      .footerLogo {
+        margin: 57px 0px 0px 50px;
+      }
+    }
+    @media (max-width: 768px) {
+      .footerLogo {
+        margin: 57px 0px 0px 30px;
+      }
+    }
+    @media (max-width: 605px) {
+      .footerLogo {
+        height: 100px;
+        text-align: center;
+        margin: 57px 0px 0px 15px;
+      }
+    }
+    .footerInformation {
+      flex-basis: 240px;
+      height: 346px;
+      margin-top: 57px;
+      margin-left: 30px;
+    }
+    @media (max-width: 1390px) {
+      .footerInformation {
+        height: 240px;
+      }
+    }
+    @media (max-width: 605px) {
+      .footerInformation {
+        text-align: center;
+      }
+    }
+    .footerContact {
+      display: grid;
+      grid-template-columns: 30px 340px;
+      grid-template-rows: 30px 210px;
+      flex-wrap: wrap;
+      margin-left: 30px;
+      .footerContact_list_description {
+        grid-area: 1/1/2/3;
+      }
+      .footerContact_list {
+        grid-area: 2/1/3/3;
+        display: grid;
+        grid-template-columns: 30px 370px;
+        grid-template-rows: 72px 72px 36px;
+        .footerContact_list_item1 {
+          grid-area: 1/1/2/3;
+          display: grid;
+          grid-template-columns: 30px 370px;
+          grid-template-rows: 72px;
+          .footerContact_list_img1 {
+            grid-area: 1/1/2/2;
+          }
+          .footerContact_list_par {
+            grid-area: 1/2/2/3;
+          }
+        }
+        .footerContact_list_item2 {
+          grid-area: 2/1/3/3;
+          display: grid;
+          grid-template-columns: 30px 370px;
+          grid-template-rows: 72px;
+          .footerContact_list_img2 {
+            grid-area: 1/1/2/2;
+          }
+          .footerContact_list_par {
+            grid-area: 1/2/2/3;
+          }
+        }
+        .footerContact_list_item3 {
+          grid-area: 3/1/4/3;
+          display: grid;
+          grid-template-columns: 30px 370px;
+          grid-template-rows: 72px;
+          .footerContact_list_img3 {
+            grid-area: 1/1/2/2;
+          }
+          .footerContact_list_par {
+            grid-area: 1/2/2/3;
+          }
+        }
+      }
+
+      height: 346px;
+      margin-top: 57px;
+      .footerContact_list_img {
+        margin-right: 20px;
+      }
+    }
+    @media (max-width: 1390px) {
+      .footerContact {
+        height: 240px;
+      }
+    }
+    @media (max-width: 768px) {
+      .footerContact {
+        margin-top: 0px;
+      }
+    }
+    @media (max-width: 605px) {
+      .footerContact {
+        justify-self: center;
+      }
+    }
+    .socialNetwork {
+      flex-basis: 305px;
+      height: 346px;
+      margin-top: 57px;
+      margin-left: 30px;
+    }
+    @media (max-width: 1390px) {
+      .socialNetwork {
+        height: 80px;
+      }
+    }
+    @media (max-width: 768px) {
+      .socialNetwork {
+        margin-top: 0px;
+      }
+    }
+
+    .allRight {
+      flex-basis: 1440px;
+      text-align: center;
+      font-family: Open Sans;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 22px;
+      letter-spacing: 0px;
+      color: #c8c8c8;
+      opacity: 0.5;
+      border-top: 1px solid rgb(255, 255, 255, 0.1);
+      height: 45px;
+
+      p {
+        margin-top: 12px;
+      }
+    }
+    .footerInformation_list,
+    .footerContact_list,
+    .socialNetwork_list {
+      @include listStyle;
+      padding: 0px;
+    }
+    .socialNetwork_list {
+      display: flex;
+      li:not(:last-child) {
+        margin-right: 40px;
+      }
+    }
+  }
+}
