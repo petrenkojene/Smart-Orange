@@ -44,6 +44,14 @@
     flex-grow: 1;
     .ourProjects_description_description {
       @include heading;
+      opacity: 0;
+      transform: translateY(-120px);
+      transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+    }
+    .fixed {
+      opacity: 1;
+      transform: translateY(0px);
+      transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
     }
     @media (max-width: 768px) {
       .ourProjects_description_description {
@@ -129,6 +137,16 @@
       position: relative;
       display: inline-flex;
     }
+    .ourProjects_img_1 {
+      opacity: 0;
+      transform: translateX(-120px);
+      transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+    }
+    .fixed {
+      opacity: 1;
+      transform: translateX(0px);
+      transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+    }
     .ourProjects_img_1:hover .container1 {
       opacity: 0.6;
       transition: opacity 0.3s;
@@ -159,6 +177,14 @@
     .ourProjects_img_2 {
       position: relative;
       display: inline-flex;
+      opacity: 0;
+      transform: translateX(120px);
+      transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+    }
+    .fixed {
+      opacity: 1;
+      transform: translateX(0px);
+      transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
     }
     .ourProjects_img_2:hover .container2 {
       opacity: 0.6;
@@ -220,6 +246,16 @@
           height: 12px;
         }
       }
+    }
+    .ourProjects_img_3 {
+      opacity: 0;
+      transform: translateX(-120px);
+      transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+    }
+    .fixed {
+      opacity: 1;
+      transform: translateX(0px);
+      transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
     }
     .ourProjects_img_3:hover .container3 {
       opacity: 0.6;
@@ -301,6 +337,16 @@
         }
       }
     }
+    .ourProjects_img_4 {
+      opacity: 0;
+      transform: translateY(120px);
+      transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+    }
+    .fixed {
+      opacity: 1;
+      transform: translateY(0px);
+      transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+    }
     .ourProjects_img_4:hover .container4 {
       opacity: 0.6;
       transition: opacity 0.3s;
@@ -379,6 +425,16 @@
           height: 12px;
         }
       }
+    }
+    .ourProjects_img_5 {
+      opacity: 0;
+      transform: translateX(120px);
+      transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+    }
+    .fixed {
+      opacity: 1;
+      transform: translateX(0px);
+      transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
     }
     .ourProjects_img_5:hover .container5 {
       opacity: 0.6;
@@ -493,20 +549,48 @@
   }
   @media (max-width: 1334px) {
     .ourProjects_button {
-      width: 840px;
+      width: 930px;
       justify-content: center;
     }
   }
-  @media (max-width: 768px) {
+  @media (max-width: 950px) {
     .ourProjects_button {
-      width: 690px;
-      justify-content: center;
+      width: 800px;
+    }
+  }
+  @media (max-width: 850px) {
+    .ourProjects_button {
+      width: 700px;
+    }
+  }
+  @media (max-width: 730px) {
+    .ourProjects_button {
+      width: 650px;
+    }
+  }
+  @media (max-width: 630px) {
+    .ourProjects_button {
+      width: 570px;
     }
   }
   @media (max-width: 480px) {
     .ourProjects_button {
+      width: 420px;
+    }
+  }
+  @media (max-width: 440px) {
+    .ourProjects_button {
+      width: 380px;
+    }
+  }
+  @media (max-width: 404px) {
+    .ourProjects_button {
+      width: 350px;
+    }
+  }
+  @media (max-width: 375px) {
+    .ourProjects_button {
       width: 320px;
-      justify-content: center;
     }
   }
   @media (max-width: 320px) {

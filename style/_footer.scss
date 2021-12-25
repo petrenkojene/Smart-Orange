@@ -162,6 +162,10 @@
   @media (max-width: 768px) {
     .socialNetwork {
       margin-top: 0px;
+      text-align: center;
+      ul {
+        justify-content: center;
+      }
     }
   }
 

@@ -17,6 +17,14 @@
     grid-area: 1/1/2/3;
     @include heading;
     justify-self: start;
+    opacity: 0;
+    transform: translateY(-120px);
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+  }
+  .fixed {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
   }
   @media (max-width: 768px) {
     .main_task_header {
@@ -32,6 +40,14 @@
     padding-left: 134px;
     @include font22;
     margin-right: 80px;
+    opacity: 0;
+    transform: translateX(-120px);
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+  }
+  .fixed {
+    opacity: 1;
+    transform: translateX(0px);
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
   }
   @media (max-width: 1024px) {
     .main_task_description1 {
@@ -50,6 +66,14 @@
     justify-self: end;
     padding: 0px 40px 0px 70px;
     @include font22;
+    opacity: 0;
+    transform: translateX(120px);
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+  }
+  .fixed {
+    opacity: 1;
+    transform: translateX(0px);
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
   }
 
   @media (max-width: 768px) {
