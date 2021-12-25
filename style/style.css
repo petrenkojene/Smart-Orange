@@ -209,16 +209,19 @@ body {
 @media (max-width: 768px) {
   .project_menu .project_menu_slider_img {
     width: 450px;
+    margin-top: 15px;
   }
 }
 @media (max-width: 480px) {
   .project_menu .project_menu_slider_img {
     width: 270px;
+    margin-top: 15px;
   }
 }
 @media (max-width: 320px) {
   .project_menu .project_menu_slider_img {
     width: 270px;
+    margin-top: 15px;
   }
 }
 
