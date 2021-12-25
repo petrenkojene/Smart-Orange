@@ -21,8 +21,6 @@ window.addEventListener("scroll", () => {
   currentTop(".ourProjects_img_3");
   currentTop(".ourProjects_img_4");
   currentTop(".ourProjects_img_5");
-  console.log(scrollTop);
-  console.log(windowCenter);
 
   function currentTop(elem) {
     let scrollObj = document.querySelector(elem);
